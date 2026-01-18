@@ -1,0 +1,119 @@
+
+Every day linux:
+---------------------- >
+..> In aero planes teh moves are running on the embeded linux system.
+..> Almost all backend servers run Linux
+..> Nginx / Apache web servers run on Linux
+..> Docker is built on Linux concepts
+..> Android OS is based on Linux kernel
+..> Networking & Security :
+    Firewalls
+    Routers
+    VPN servers
+    Monitoring systems.
+
+..> Embedded Systems & IoT
+    Smart TVs
+    Routers
+    Cars infotainment systems
+    Raspberry Pi
+    All Linux-based
+
+
+What is an operating system
+------------------------------- >
+..> Linux is an operating system.
+
+Operating system: An OS is an system software that manges  computer hardware and software resources, and provides common services for the computer program.
+
+.> it acts has middleman, bw the hardware computer user.|
+
+
+# Types of the operating system:
+Desktop OS: Microsoft windows, masOS,Linux such has Ubuntu.
+Server OS: windows server, linus distribution linux CentoOS, Redhat etc.
+Mobile OS: Android, IOS, 
+Embedded OS:  Used in the devices like teh TV's, Routers, home appliances.
+Real-Time -OS: used  in teh medical devices, aerospace, defense, home security.
+
+
+# Examples of computer operating systems
+ > Redhat – Very popular Linux operating system from Redhat
+ > Microsoft Windows - PC and IBM compatible operating system. Microsoft Windows is the most
+commonly found and used operating system in PCs
+ > Apple MacOS - Apple computer operating system. The only Apple computer operating system.
+ > Ubuntu Linux - A popular variant of Linux used with PC and IBM compatible computers.
+ > Google Android - operating system used with Android compatible phones.
+> iOS - Operating system used with the Apple iPhone.
+
+
+# What is the Linux:
+> Linux is an free and open resource operating systems.
+> Linux is very popular for its stability, security, flexibility,
+it can be modified and distributed by any one which led to the to many different versions, knowns as "distribution".
+
+> 
+> 
+
+# why linux is importance :
+> widely used in servers and cloud computing
+> free software 
+> strong command line interface
+> faster processing
+> enhanced security
+> community support
+
+# history of the linux:
+> UNIX 
+> GUL
+> LINUX "21 YEAR OLD BOY" 
+    "Just a hobby, wont be big and professional like GUN".
+> 
+
+
+# UUNIX _ LINUX
+> unix was developed for multi-user and multi tasking ni mid 1970
+> unix can be only installed on certain software only.
+
+> linux is mostly free
+> linux is open source
+> linux can be installed on any software.
+
+
+# linux flavours: 
+> Ubuntu
+> fedora
+> debian
+> redhat  70-80 use this only
+> CentoOS  : silimar with the redhat
+> arch linux
+> openSUSE
+> Linux Mint 
+> Gentoo
+> slackware
+> alphine linux
+> kali linix  : cyber security
+
+
+
+
+# linux windows:
+
+  $ Availability of source code
+    linux : linux is open source
+    windows: windows is proprietary software
+  $ cost :
+    linux : linux is free
+    windows: windows is paid 
+  $ user interface"
+    linux : linux majorly command line 
+    windows: windows is majorly GUI.
+  $ software INstallation and packages management :
+    linux : in linux we use the APT, YUM  etc 
+    windows: in windows software is mostly using standalone executables (.exe).
+  $ security:
+    linux : linux is most secure.
+    windows: has GUI so somewhat malware 
+  $  
+
+
