@@ -64,3 +64,21 @@ Operating System
 hardware
 
 
+# ways to install the OS:
+----------------------------- >
+...> 1️⃣ Using a CD / DVD (Traditional method):
+How it works
+OS files are stored on a CD/DVD
+Computer boots from CD/DVD
+Installer loads into memory
+OS is installed on hard disk
+..> 2️⃣ Using a USB Flash Drive (Bootable USB):
+How it works
+ISO image is written to a USB
+BIOS/UEFI boots from USB
+Installer runs
+..> 3️⃣ Using an ISO Image (Virtual Machines)
+How it works
+ISO = digital copy of OS DVD
+Hypervisor mounts ISO as a virtual C
+VM boots from ISO
