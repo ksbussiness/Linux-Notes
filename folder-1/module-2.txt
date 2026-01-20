@@ -1,0 +1,66 @@
+
+
+# Installation steps:
+------------------------ >
+                { VMWare player, Oracle VirtualBox }
+desktop ...>            virtualization software         ...>   Virtual Machine  ...> Linux
+
+                    { AWS , Google }
+desktop ...>             cloud service        ...>   Virtual Machine  ...> Linux
+
+
+
+# What is a Hypervisor ? :
+------------------------------ >
+
+A hypervisor is a software layer that:
+
+    Creates virtual machines (VMs)
+    Shares real hardware (CPU, RAM, Disk, Network)
+    Keeps each VM isolated from others
+
+
+We have the two types of the Hypervisors:
+TypeOne-1:
+..> Runs directly on hardware (no host OS).
+..> 
+
+Type-2 Hypervisor (Hosted)
+Runs on top of a host OS like a normal application.
+ex: VirtualBox is a Type-2 hypervisor.
+
+
+Hardware
+   ↓
+Host OS (Windows / Linux / macOS)
+   ↓
+VirtualBox (Hypervisor)
+   ↓
+Guest OS (Ubuntu, CentOS, etc.)
+
+
+Hypervisor :
+Software that enables multiple operating systems to share and run on the same physical hardware.
+
+VirtualBox :
+A Type-2 hypervisor that runs on a host operating system to create and manage virtual machines.
+
+
+# what is the virtual box:
+-------------------------------- >
+
+..> Virtual box, is a free and open-source hypervisor for x86 computers currently.
+..> VirtualBox lets you run another operating system (like Linux or Windows) as an app on your current system.
+..> it’s a virtual machine manager.
+You can:
+Use Linux inside Windows
+Use Windows inside Linux
+Run multiple OSs at the same time
+
+
+Linux, windows, MAC 
+Virtual box/ hypervisor
+Operating System 
+hardware
+
+
