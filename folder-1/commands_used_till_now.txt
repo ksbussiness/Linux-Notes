@@ -1,0 +1,6 @@
+
+whoami
+pwd  [ print working directory]
+ls  [ List, It list all the directory. It tells you where you current location is.]
+cd  [ change directory]
+passwd userid [ To change the password]

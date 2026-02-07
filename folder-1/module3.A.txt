@@ -1,0 +1,88 @@
+Introduction to FileSystem :
+--------------------------------- >
+
+# What is a FileSystem ?
+    .> It is an system used by an operating system to manage files. The system controls how data is saved or retrieved.
+    .> OS stores files and directories in an organized and structured way.
+    .>  There are many different types if the file systems
+      eg:    ext3, ext4, xfs, NTFS, FAT etc.
+
+
+File system Structure and its Description :
+-------------------------------------------------- >
+
+/boot  : Contains file that is used by the boot loader (grub.cfg)
+  .> When your os is booting , then the info in this file will be booted first.
+/root : root user home directory. It is a not same as /
+/dev: System devices (disk, cdrom, speakers, flashdrive, keyboards etc.)
+/etc : Configuration files
+/bin ..> /usr/bin : Everyday user commands
+/sbin ..>/usr/sbin : System/filesSystem commands.
+/opt  : Optional add-on application (Not part of OS apps)
+/proc : Running process ( only exist in Memory )
+/lib : C programmming library files needed by commands and apps.
+/temp : Directory for temporary files.
+/home : Directory for user  [give us details of the all the users inside the system]
+/var : System logs 
+ > In the above directory the system logs will be stored.
+/run : System daemons that start very early (e.g systemd and udev )to store temporary runtime files like PID files.
+/ mnt : To mount external filesystem (e.g NFS)
+/ media : For cdrom mounts. 
+
+
+the linux kernel will create all these file 
+
+
+File Navigation System Commands :
+--------------------------------------- >
+
+.> In order to move  from normal user to he root user we need to use the command called 
+   $: su -
+   $: password : { enter the password here to become the root user }
+
+
+.>  after entering the ls -l
+
+-rw-r--r--. 1 root root  ...... { if any starts with the '-' then it is said tobe  file }
+drwxr-xr-x. 33 root root ...... { if any thing starts with the d then it is said to be directory /folder}
+
+Note : when any things starts with the "d" { then it is said to be and directory or folder}
+
+
+Linux File or Directory Properties:
+------------------------------------------ >
+
+.> Each file or directory in linux has details information or properties.
+When we use the ls -l, then we get the 
+
+Type/Perms   Links   Owner    Group    Size   Month  Day   Time     Name
+---------------------------------------------------------------------------
+drw-r--r--   1       sachin   staff    2048   Feb    7     10:30    notes.txt
+drwxr-xr-x   2       sachin   staff    4096   Feb    6     18:20    projects
+-rwxr-xr-x   1       sachin   staff    1024   Feb    5     09:15    script.sh
+
+
+
+here :  drw-r--r--  [ start with the "d", then it is directory/folder]
+        lrwxr-xr-x  [ starts with the "l", then it is link to the other file]
+        -rwxr-xr-x  [ starts with the "-", then it is file ]
+
+Note : The second column is the number of hard links to the file,For a directory ,the number of hard links is the number of immediate subdirectories it has plus its parent directory and itself.
+
+
+File System Paths:
+--------------------- >
+Absolute and relative paths
+
+.> There are two paths to navigate to a filesystem
+  # Absolute Paths
+  # Relative paths
+
+
+# An absolute path always begins with a "/".This indicates that the path starts at the root directory.
+.> an example of an absolute path is cd/var/log/samba
+
+# An relative path does not bogin with a "/". It identifies a location relative to your current position. An example of a relative path is  
+  cd /var
+  cd log
+  cd samba

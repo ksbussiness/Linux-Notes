@@ -1,0 +1,64 @@
+
+Important Things to remember in Linux :
+------------------------------------------- >
+
+.> Linux has super-user account called root.
+    * Root is the most powerful account that can create, modify, delete accounts and make changes to system configuration files.
+    * Even can delete teh Os also.
+    * Linux is case-sensitive system. Which means ABC is not same has abc.
+    * Avoid using spaces when creating files and directories.
+    * Linux kernel is not an operating system.It is a small software   within Linux operating system that takes commands from the users and pass them to system hardware or peripherals.
+    * Linux is CLI,not GUI.
+    * Linux is very flexible as compared to other OS.
+
+
+.> Access to Linux System.
+    * There are 2 types of access.
+     Console 
+     Remote.
+    # The console is  a direct access to an operating system when, it is  connected through VGA, HDMI, DVI.
+    # The 2nd type of access is remote where you connect to your      operating system remotely over the network.
+
+    Note : RDP : Remote Desktop Connection, connecting an os via IP address.
+    .> When connecting an remote linux system from the windows system, then we need to have the, Client [ Putty ].
+    .> 
+
+    Note : Imp:
+    If we are using the Windows 10 or newer-version: We can connect through the, Build_in SSh Client
+    open the cmd > type ssh 
+    and use the ssh ip [The ip address for which you want ot connect ]
+
+Command to get the ip address :
+    .> ifconfig
+    .> ip address
+    Note: If ipconfig is not working the, first install 
+            "yum install net-tools"
+
+    * After running the ifconfig : we get the 3 layers, ignore the last 2 layers. enp0s3: 
+
+    # What are the command prompts ?
+    .> A command prompts, also referred to simply as a prompts, is a short text at the start of the command line followed by prompts symbol.
+
+    To get command prompt back then we need to use the : ctrl+C 
+
+    whoami : gives you the current user details.
+    hostname : gives me an hostname
+
+
+...> What is the Root ?
+
+* There are 3 types of roots on Linux System.
+  1) Root account: root is an account or a username on linux machine and it is the most powerful account which has access to all commands and files 
+  2) Root as /: the very first directory in linux is also, referred as root directory.
+  3) Root home directory : the root user account also has directory located in /root which is called root home directory.
+
+
+  ....> Changing password 
+   * You should change your initial password as soon as you login 
+
+   command =passwd userid
+  Old password : Enter your current password
+  New password : enter your new password 
+  Retype new password : re-enter your new password.
+
+  
