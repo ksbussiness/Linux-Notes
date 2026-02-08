@@ -86,3 +86,195 @@ Absolute and relative paths
   cd /var
   cd log
   cd samba
+
+
+Creating File and Directories :
+-------------------------------------- >
+ # Creating Files And Directories:
+
+* Creating Files:
+touch
+cp
+vi
+
+
+EX1: touch file_name
+EX2: cp current_file_name destination_file_name
+EX3: vi file_name
+shift:wq! + "enter"
+
+
+EX4: touch file_name_1 fila_name_2 file_name_3 
+So, by using this we can create has many has file names.
+
+* Creating Directories:
+mkdir
+
+
+ex1: mkdir directory_name 
+
+EX2: mkdir directory_name1 directory_name2 directory_name3
+The above command will make the 3 directories.
+
+
+Copying Directories:
+------------------------ >
+# Command to copy a directory:
+ > cp
+
+# To copy a directory on Linux, you have tp execute the "cp" command with the '-R' option for recursive and specify the source and destination directories to be copied.
+
+ex: cp -R <source_folder> <destination_folder>
+
+
+Finding Files and Directories (find, locate) :
+-------------------------------------------------- >
+* Two main directories 
+
+Syntax: find [name for the file which we are searching]
+ 
+>  we can give the relative path here by using the '.'
+ex: find . -name "kramer"
+
+locate [ name of the file which we want to search ]
+
+
+Note : if the locate command does not output any result, then as root run "updatedb"
+
+Also make sure you have "mlocate" package installed
+To check =rpm -qa | grep mlocate
+To install =yum install mlocate
+
+Difference Between find and locate :
+--------------------------------------- >
+
+
+locate : uses a prebuild database, which is should be regularly updated, while find iterates over a filesystem to locate files. Thus, locate is much faster that find, but can be inaccurate if the database ( can be seen as a cache) is not updated.
+
+> To update locate database run updatedb
+
+
+
+Wildcards in linux :
+----------------------- >
+> A wildcard is a character that can be used as a substitute for any of a class of character in a search.
+  * ..> represents zero or more characters 
+  ? ..> represents a single character
+  [] ..> represents a range of characters
+
+
+ex: rm : Remove, This command is used to remove the files
+rm abc* { This will remove all the files which are start with the abc..}
+
+EX: creation of the 10 files:
+touch abcd{1..9}-xyz
+ls -l abc*
+rm  
+
+
+Linux File Types:
+------------------------------- >
+* There are different types of teh files, Regular file,
+Directory, Link, Special file or device file, socket, Named pipe, Block Device.
+
+File_symbol   Meaning
+-             Regilar file
+d             directory
+l             link
+c             Special file or device file
+s             socket
+p             Named pipe
+b             block  Device
+
+
+Block device File: [ b ]
+------------------------ >
+* Hard drives
+* USB drives
+Startin
+
+1) - Regular File
+Used for: Storing normal data like text, code, images, executables.
+Example: notes.txt → A normal text file containing meeting notes.
+
+2) d Directory
+Used for: Holding files and other directories (like a folder).
+Example: projects/ → A folder that contains multiple project files.
+
+3) l Symbolic Link (Soft Link)
+Used for: A shortcut that points to another file or directory.
+Example: config_link -> /etc/config → A shortcut to another file.
+
+4) c Character Device File 
+Used for: Devices that transfer data one character at a time (stream-based).
+Example: /dev/tty → Represents your terminal device.
+
+
+5) s Socket
+Used for: Communication between processes (IPC – Inter Process Communication).
+Example: /var/run/docker.sock → Used by Docker to communicate internally.
+
+6) p Named Pipe (FIFO) :
+Used for: Passing data from one process to another (like a one-way channel).
+Example: mkfifo mypipe → Creates a pipe to send data between programs.
+
+7) b Block Device File 
+Used for: Devices that transfer data in blocks (like hard disks).
+Example: /dev/sda → Represents your hard disk.
+
+
+
+Soft And Hard Link:
+------------------------- >
+inode = Pointer or number of a file on the hard disk.
+
+An inode will store the File Permission
+Owner, Size, Timestamps, Disk block locations.
+> File name is stored in the directory.
+> The directory maps filename >> inode number.
+
+command: ls -li notes.txt
+ex: 123456 -rw-r--r-- 1 user user 200 Feb 8 notes.txt
+123456 = inode number.
+
+NOTE : The inode does not store the file name
+
+Directory
+   |
+   |---- file1.txt  ----\
+   |                     >  inode 12345  ---> actual data blocks on disk
+   |---- file2.txt  ----/
+Both names point to the SAME inode.
+
+When we delete one:
+rm file1.txt 
+The file still exits because inode still has i link.
+The file will be removed only when  Link count becomes 0.
+
+
+Note : every time when we create an file, an number called will assigned to that file on the hard disk.
+
+
+# Soft Link : This link will be created when an file is created and Link will be removed if file is removed or renamed.
+
+SOFT LINK (Symbolic Link)
+> A soft link is a special file that stores the path of another file.
+> If original file moves or deletes  .> link breaks.
+
+# Hard Link : Deleting renaming or moving the original file will not affect the hard link.
+
+
+| Feature          | Hard Link         | Soft Link         |
+| ---------------- | ----------------- | ----------------- |
+| Inode            | Same inode        | Different inode   |
+| Disk Space       | No extra data     | Small extra space |
+| Link count       | Increases         | No change         |
+| Delete original  | File still exists | Link breaks       |
+| Cross filesystem | ❌ No              | ✅ Yes             |
+| Link directories | ❌ No              | ✅ Yes             |
+| Type in `ls -l`  | `-`               | `l`               |
+
+
+
+echo "conetent to write in to an file > fila_name_2
+cat filename

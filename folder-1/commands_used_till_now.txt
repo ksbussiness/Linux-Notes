@@ -1,6 +1,38 @@
 
 whoami
-pwd  [ print working directory]
-ls  [ List, It list all the directory. It tells you where you current location is.]
-cd  [ change directory]
-passwd userid [ To change the password]
+pwd  
+> [ print working directory]
+
+ls 
+> [ List, It list all the directory. It tells you where you current location is.]
+
+cd  
+> [ change directory]
+
+passwd userid 
+> [ To change the password]
+
+touch file_name
+> [ Used for the creation of the file]
+
+cp current_file destination_file
+> [ used for copying the files from source to destination location]
+
+vi file_name
+
+mkdir directory_name  
+> [ To creation of the directory ]
+
+cp -R <source_directory> </destination_directory>
+> [User for copying the directory]
+
+rm file 
+> [ used to delete the files]
+
+ls -li 
+> [ To get the info about the files and links.]
+
+cat filename
+> [ used to get the content of the file]
+
+
