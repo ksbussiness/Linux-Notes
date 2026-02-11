@@ -1,0 +1,50 @@
+Linux Command Syntax:
+------------------------------ >
+
+Commands typically have the syntax:
+  > command options arguments
+
+
+File and Directory Permissions ( chmod ) :
+----------------------------------------------- >
+> Permissions for an file or directory may be restricted to by types
+> There are 3 types of the Permissions
+  * r - read 
+  * w - write 
+  * x - execute = running a program
+
+> Each permission (rwx) can be controlled at three levels
+  * u - user = group
+  * g - group = can be people in the same project
+  * o - other = everyone on the system 
+
+
+> File or Directory permission can be displayed by running ls -l command
+ 
+ > - rwx rwx rwx  
+  in the above line the [-] refers has the file and first rwx is for the file, group and others 
+
+> Command to change permission 
+ chmod [change mod]
+
+ syntax : chmod [g,u,o, a] [-+] [rwx] file_name
+
+ chmod a-r file_name
+ > here we are removing the read permission from all the users.
+ 
+chmod u+w file_name
+> here we are adding the write permissions to an file or an particular User
+
+chmod g+rw file_name
+> here we  are adding the read, write permission to an file for all the group members
+
+Note point:
+
+drwx : here I have an directory were it has
+read, write , executable permissions , it has the executable permission
+then only we cna go inside that directory 
+I mean we can do : cd directory_name
+
+drw- : here for this directory we do not have the executable permission
+so we can not do this : cd directory_name.
+

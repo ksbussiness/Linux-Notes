@@ -35,4 +35,14 @@ ls -li
 cat filename
 > [ used to get the content of the file]
 
+ls -lt 
+> [ This will get has the contents of the directory with the time the are created].
 
+ls -l file_name
+> [ This will get the information about the specific file]
+
+rm -r directory_name
+> [ To remove an directory we use the  rm -r directory_name]
+
+man command_name 
+> [ This will used to get commands manual]
