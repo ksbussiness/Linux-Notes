@@ -48,3 +48,89 @@ I mean we can do : cd directory_name
 drw- : here for this directory we do not have the executable permission
 so we can not do this : cd directory_name.
 
+
+Permissions Using Numeric Mode:
+------------------------------------- >
+
+Permission to a file and directory can also be assigned numerically :
+chmod ugo+r file_name
+[or]
+chmod 444 file_name
+
+
+
+
+| Permission    | Symbol | Numeric Value | Meaning                                      |
+| ------------- | ------ | ------------- | -------------------------------------------- |
+| Read          | `r`    | 4         | View file contents / list directory          |
+| Write         | `w`    | 2         | Modify file / create-delete inside directory |
+| Execute       | `x`    | 1         | Run file as program / enter directory        |
+| No Permission | `-`    | 0         | No access                                    |
+
+
+
+
+| Permission Combination | Calculation | Numeric Value | Symbol |
+| ---------------------- | ----------- | ------------- | ------ |
+| Read only              | 4           | 4             | r--    |
+| Write only             | 2           | 2             | -w-    |
+| Execute only           | 1           | 1             | --x    |
+| Read + Write           | 4 + 2       | 6             | rw-    |
+| Read + Execute         | 4 + 1       | 5             | r-x    |
+| Write + Execute        | 2 + 1       | 3             | -wx    |
+| Read + Write + Execute | 4 + 2 + 1   | 7             | rwx    |
+
+
+> chmod 746 file_name
+here in this case, 7 rwx permissions to the user 
+                   6 rw permissions to the group
+                   4 r  permissions to the others 
+                
+
+File ownerShip :
+-------------------- >
+* There are 2 owners of a file or directory 
+  > User and group
+*  Command to change file ownerShip
+  > chown and chgrp
+     . chown changes the ownership of a file
+     . chgrp changes the group ownership of a file
+
+* Recursive ownership change option (Casecade):
+   -R 
+* 
+Note: Only the root user can change the ownerShip of the file.
+syntax: chown [permission_to_change] file_name
+
+chown root file_name
+> here we are changing the user permissions to the root 
+chgrp root file_name
+> here we are changing the group permission to the root.
+
+
+
+Access Control List in Linux:
+--------------------------------- >
+> Access control List (ACL) provides an additional, more flexible permissions mechanism for files systems.It is designed to assist with UNIX file permissions. ACL allows you to give permissions for any user or group to any disc resource.
+
+> ACLs allow you to give extra, fine-grained permissions to specific users or groups without changing the standard owner/group/others permissions.
+
+Scenario Problem:
+--------------------- >
+What if you want to give only one specific user write access, but that user is NOT the owner and NOT in the group?
+
+. Standard chmod cannot do that.
+. This is where ACLs are used.
+
+> commands to assign and remove the ACL permissions are:
+   setfacl  and getfacl
+
+To add permissions for user :
+> setfacl -m u:user_name:rwx  /path/to/file
+
+To add permission for the group :
+> setfacl -m g:group_name:rw /path/to/file
+
+
+> To get more info about the file use this command:
+  [ getfacl file_name ]

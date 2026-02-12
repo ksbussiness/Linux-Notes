@@ -1,4 +1,6 @@
 
+:q! This is used to quit from the vim editor.
+
 whoami
 pwd  
 > [ print working directory]
@@ -46,3 +48,10 @@ rm -r directory_name
 
 man command_name 
 > [ This will used to get commands manual]
+
+chmod 764 file_name
+> [ This is useful for changing the permission using numbers ]
+
+chown [permissions] file_name
+> [This is used to change the ownership of a file ]
+> 
