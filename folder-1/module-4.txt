@@ -134,3 +134,56 @@ To add permission for the group :
 
 > To get more info about the file use this command:
   [ getfacl file_name ]
+
+
+
+
+Help Commands:
+--------------------- >
+> There are the 3 types of the help commands:
+
+> whatis command_name
+..> This command will get us more info about the command.
+
+> command_name --Help
+..> This command will get us more details/description about the command.
+
+> man command
+..> This command will get more info about the command.
+
+
+TAB Completion and Up Arrow
+------------------------------- >
+> Hitting TAB key completes the available commands,files or directories.
+   .> chm TAB
+   .> ls j<TAB>
+   .> cd Des<TAB>
+> Hitting up arrow key on the keyboard returns the last command ran.
+
+> 
+
+
+Adding Text to files ( Redirects) :-
+-------------------------------------------- > 
+1) echo "matter to add in to the file" > nameOfTheFile
+
+Note Point:- To add new content to the existing file, without Overriding we need to use,
+echo "This is new line we are adding to file" >> nameOfTheFile
+
+2) cat > file.Text
+Added the content..
+CTRL+D
+
+cat >> file.txt
+Then type content → press CTRL + D.
+
+3) Using the vi/vim
+Press i → Insert mode
+Add content
+Press ESC
+Type: { :wq }
+Then press Enter (save & quit)
+
+copying Content From one file to anotherFile
+> cat file1.txt > file2.txt { withOut writing }
+> cat file1.txt >> file2.txt { OverWrite }
