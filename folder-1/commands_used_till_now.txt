@@ -56,4 +56,11 @@ chown [permissions] file_name
 > [This is used to change the ownership of a file ]
 > 
 
+mv oldname.txt newname.txt
+> [ This is used to rename the file]
+
+less fileName: This is used to see the contents of an file
+
+head -3 fileName: This is used to see only first fewLines of an file.
+tail -3 fileName: This is used to see only last fewLines of an file.
 

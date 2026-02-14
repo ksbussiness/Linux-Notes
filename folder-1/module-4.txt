@@ -187,3 +187,67 @@ Then press Enter (save & quit)
 copying Content From one file to anotherFile
 > cat file1.txt > file2.txt { withOut writing }
 > cat file1.txt >> file2.txt { OverWrite }
+
+File Maintenance Commands :
+------------------------------------ >
+
+# COPYING AN FILE :
+cp: This is used to copy an files
+syntax :
+    cp source_File destination_File
+    cp source_File /other/Location/path
+# REMOVING AN FILE:
+rm : This is used to remove an files.
+syntax :
+     rm file_name
+
+# RENAME or MOVE
+mv : This is used to rename an file [ OR ]
+..> This is used to move an file to the location also
+
+ex: Move a File to Another Location
+mv file.txt /home/user/documents/
+> This moves the file1.txt from the current directory to /home/user/documents/.
+
+>> Rename a File:
+mv oldname.txt newname.txt
+> This will renames oldname.txt to newname.txt
+
+>> Moves a directory:
+mv myFolder /home/user/Desktop/
+> This will moves the entire directory myFolder to Desktop
+
+# REMOVE:
+rm fileName : This will delete the file.
+
+rm -f fileName.txt : This will delete the file withOut asking.
+
+rm -r myFolder : This will deletes the directory, files,, Subdirectories.
+
+rm -Rf myFolder : This will delete all, withOut any conformation.
+
+
+File Display Commands :
+------------------------------ >
+> cat : To see the all content's of an file we use this.
+> more :  more file_name
+    NOTE : This will show only few contents of an file we can Use Space_key to move forward. q to get back Prompt back
+> less : less messages
+    NOTE : same has more/
+    to get only 1 line down : j
+    to get only 1 line move : k
+> head : To see starting few lines we use this.
+    NOTE: head -2 fileName: To see only the first 2 lines from the file.
+> tail : To see bottom few lines we use this.
+    NOTE: tail -2 fileName: To see only the last 2 lines from the file.
+
+
+Filters/Text Processors Commands:
+---------------------------------------- >
+cut 
+awk 
+grep 
+egrep 
+sort 
+uniq 
+wc  : WordCount > This will gives us how many words are there in the file.
