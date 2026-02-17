@@ -1,0 +1,36 @@
+
+
+
+Module3 Notes only :
+----------------------------- >
+
+
+Cut-Test Processors Commands:
+>> The cut command is used to to extract specific parts of text from each line of a file or command output.
+# It works on the Characters 
+
+
+cut --version : This command will give you version
+
+EX: data.txt 
+{  
+    Sachin
+    Rohit
+    Virat
+}
+
+>> cut -c 1-3 data.txt
+Sac
+Roh
+Vir 
+
+>> cut -c1 3,5,7 fileName.txt  : This is used to get the respective 
+numbers from the file.
+
+ >> cut -c1-3 filename : This is used to get the character from starting to specified range
+
+ >> cut -c1-3, 6-8 filename: This is used to get_first 3 characters and from 6-8 characters also.
+
+ 
+
+
