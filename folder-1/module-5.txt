@@ -47,3 +47,26 @@ ex: awk  'length{$0} > 15' fileName
 
 
 # To get the Number of fields from  each row in an file: ls -l | awk '{print NF}'
+
+
+GREP/ EGREP : It is also one of the Text Processors Commands
+> The grep command which stands for "global regular expressions print",
+processess text line by line and prints any lines which match a specified pattern.
+
+Note : This is used to search only single word from an file. 
+
+> grep --version  : to show which version we are using
+> grep --help : to get more information about this command.
+
+syntax: grep < keyword_to_search > file_name.
+
+> grep -c keyword filename : This is used to search for an keyword and get the count of that word.
+
+
+> grep -i keyword fileName : This is used to search for an keyword with case sensitive.
+
+> grep -vi keyword fileName: This is used to get the every word from the file expect the provided word from the given file.
+
+Egrep : This is used to search two words from an file.
+
+ > egrep -i "keyWord1|keyWord2"  fileName
