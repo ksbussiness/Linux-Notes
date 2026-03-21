@@ -64,3 +64,17 @@ less fileName: This is used to see the contents of an file
 head -3 fileName: This is used to see only first fewLines of an file.
 tail -3 fileName: This is used to see only last fewLines of an file.
 
+
+
+
+
+
+
+
+To get the ip address:
+------------------------- >
+ifconfig 
+ifconfig | more 
+ip a
+> The above commands are used to get the ip addresses of the system
+

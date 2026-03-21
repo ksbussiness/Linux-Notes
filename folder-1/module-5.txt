@@ -49,7 +49,9 @@ ex: awk  'length{$0} > 15' fileName
 # To get the Number of fields from  each row in an file: ls -l | awk '{print NF}'
 
 
-GREP/ EGREP : It is also one of the Text Processors Commands
+GREP/ EGREP : It is also one of the Text Processors  :
+-------------------------------------------------------------- >
+Commands
 > The grep command which stands for "global regular expressions print",
 processess text line by line and prints any lines which match a specified pattern.
 
@@ -70,3 +72,56 @@ syntax: grep < keyword_to_search > file_name.
 Egrep : This is used to search two words from an file.
 
  > egrep -i "keyWord1|keyWord2"  fileName
+
+
+Sort/uniq Text Processors Commands  :
+-------------------------------------------------------------- >
+# Sort 
+> Sort commands sorts in alphabetical order
+> Uniq command filters out the repeated or duplicate lines.
+Commands:
+----------- >
+> sort --version Or sort  --help : Check version or help
+> sort file_name    = Sorts file's content in alphabetical order. 
+> sort -r file_name : Sorts file's in the reverse order then we use it.
+> sort k2 file_name: Sorts file by using the second field
+
+> Sort kn file_name: Sorts files with the Nth character.
+
+ls -l | sort k9 sorting with the 9th columnNames.
+
+#  Uniq
+NOTE : The uniq will not work without the sort options
+> uniq file_name: This is give you only the uniq names from the file.
+
+
+> sort fileName | uniq  : This command will remove the duplicate from the file.
+> sort fileName | uniq -c : This will give uniq and count of each line
+
+> sort fileName | uniq -d : To show only the lines which are repeated.
+
+> 
+
+Comparing two files in linux:
+---------------------------------- >
+To compare the two file we have the two commands
+diff, cmp 
+> diff fileName1 fileName2 : This will gives what are different in the two file.
+
+> cmp fileName1 fileName2 : This will gives how many lines, bytes are different in the two files.
+
+
+WC : Text Processors Commands:
+======================================== >
+wc =Word count
+This command reads either standard input or a list of files and generates: newLine count, word count, byte count.
+
+> wc --version : checks version or help
+> wc fileName: This gives has linesCount, wordsCount, Bytes.
+> wc -l fileName : This will give as only linesCount.
+> wc -w fileName : This will give as only wordsCount.
+> wc -c fileName: This will give as only bytesCount.
+> ls -l | wc -l: this will give us no of lines in the directory.
+> ls -l | grep drw | wc -l: This will gives as the no od lines which are the directories.
+
+>  
