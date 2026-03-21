@@ -1,0 +1,50 @@
+# Compress and un-compress files :
+
+tar:
+======= >
+> This command is used to get all the contents of an file/directory to an file.
+
+ex: Suppose we needs to send all the logs, to the support team
+> then we needs to get all the contents in to zn file , for this purpose we use the tar command.
+
+> tar cvf fileName1.tar relative_path
+here fileName1 to which we are saving all th logs and contents information.
+
+
+> After tarring we needs to un tar the file to get the contents.
+# tar xvf fileName1.tar : this commands is used to unTar the file
+
+
+
+
+gzip : 
+========= >
+> This is used to compress the file.
+# gzip fileName1.tar : this command is used to compress the contents.
+
+
+ungzip:
+========== >
+> This is used to unzip the file.
+# gzip -d fileName : this is used to unzip the file.
+
+
+# Truncate File Size: 
+-------------------------- >
+
+> The linux truncate command if often used to shrink or extend the size of a file to the specified size.
+
+Note: never use the truncate command directly on an file it will chop the file contents more. [ which means it will remove the contents from the file]
+
+Syn: truncates -s 10 fileName
+here -s is an size.
+
+
+# Combining and Splitting Files :
+----------------------------------- >
+> Multiple files can be combined into one and 
+> One file can be split into multiple files.
+
+split -l 2 fileName newFileName
+> here the fileName is  from which we are splitting the contents.
+> if the contents in the fileName is more then multiple file will be formed with the new names, like newFileName1, newFileName2, newFileName3 ..
