@@ -1,0 +1,32 @@
+# Module 5 notes linux Notes:
+  ------------------------------- >
+
+@ Introduction to the Vi Editor :
+
+>>  Vi supplies commands for:
+    * Inserting and deleting text, 
+    * Replacing text.
+    * Moving around the file.
+    * Finding and substituting strings.
+    * Cutting and pasting text.
+>> Most common Keys:
+    i- Insert
+    Esc- Escape out of any mode.
+    r- replace
+    d- delete 
+    :q! - quit without saving.
+    :wq! - quit and save.
+
+    shit+(lower zz) : ZZ => This also save and exit (Only if changes were made)
+
+    # To delete an single line then you just press "d" in the insert mode on an line.
+    # To undo the deleted line then press the "u"
+    # To remove the an single character then press the "x".
+    # In order to search for an word in the  vi mode we use 
+      % go into the insert mode.
+      % then in last /wordName
+      % hit enter 
+
+
+>> To open the vi editor mode we use the,
+  vi fileName
